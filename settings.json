@@ -1,11 +1,9 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
@@ -23,8 +21,7 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -33,8 +30,7 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane"
             },
             "id": "User.splitPane.91AB55B1",
@@ -49,24 +45,20 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
+            "colorScheme": "TokyoNight",
             "cursorShape": "filledBox",
-            "font": 
-            {
+            "font": {
                 "face": "JetBrainsMono Nerd Font"
             }
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -81,6 +73,30 @@
             }
         ]
     },
-    "schemes": [],
+    "schemes": [
+        {
+            "background": "#000000",
+            "black": "#363B54",
+            "blue": "#7AA2F7",
+            "brightBlack": "#363B54",
+            "brightBlue": "#7AA2F7",
+            "brightCyan": "#7DCFFF",
+            "brightGreen": "#41A6B5",
+            "brightPurple": "#BB9AF7",
+            "brightRed": "#F7768E",
+            "brightWhite": "#ACB0D0",
+            "brightYellow": "#E0AF68",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#7DCFFF",
+            "foreground": "#787C99",
+            "green": "#41A6B5",
+            "name": "TokyoNight",
+            "purple": "#BB9AF7",
+            "red": "#F7768E",
+            "selectionBackground": "#FFFFFF",
+            "white": "#787C99",
+            "yellow": "#E0AF68"
+        }
+    ],
     "themes": []
 }
