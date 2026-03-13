@@ -23,6 +23,6 @@ if (-not (Test-Path $profileDir)) { New-Item -ItemType Directory -Path $profileD
 Write-Host "Downloading profile and theme..." -ForegroundColor Cyan
 $repoUrl = "https://raw.githubusercontent.com/henriwasd/windows-terminal/main"
 Invoke-RestMethod "$repoUrl/Microsoft.PowerShell_profile.ps1" | Out-File "$profileDir\Microsoft.PowerShell_profile.ps1" -Force
-Invoke-RestMethod "$repoUrl/cobalt2.omp.json" | Out-File "$profileDir\cobalt2.omp.json" -Force
+Invoke-RestMethod "$repoUrl/gruvbox.omp.json" | Out-File "$profileDir\gruvbox.omp.json" -Force
 
 Write-Host "Done! Restart your PowerShell." -ForegroundColor Green
