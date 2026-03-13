@@ -96,6 +96,9 @@ function docs
 function dtop
 { Set-Location ([Environment]::GetFolderPath("Desktop"))
 }
+function pj
+{ Set-Location "C:\Users\hen\Documents\Projects"
+}
 function ga
 { git add .
 }
