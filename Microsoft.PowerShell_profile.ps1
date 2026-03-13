@@ -82,9 +82,13 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 
 # 5. Shortcuts & Aliases (All original features preserved)
-function Edit-Profile
-{ zed $PROFILE
+if (Get-Alias rm -ErrorAction SilentlyContinue) { Remove-Item alias:rm -Force }
+function rm {
+    param([Parameter(ValueFromPipeline=$true, ValueFromRemainingArguments=$true)][string[]]$Path)
+    Microsoft.PowerShell.Management\Remove-Item -Path $Path -Recurse -Force
 }
+
+function Edit-Profile { zed $PROFILE }
 Set-Alias -Name ep -Value Edit-Profile
 function docs
 { Set-Location ([Environment]::GetFolderPath("MyDocuments"))
