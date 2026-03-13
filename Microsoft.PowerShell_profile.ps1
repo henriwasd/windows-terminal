@@ -97,7 +97,7 @@ function dtop
 { Set-Location ([Environment]::GetFolderPath("Desktop"))
 }
 function pj
-{ Set-Location "$HOME\Documents\Projects"
+{ Set-Location "$HOME\Projects"
 }
 function ga
 { git add .
